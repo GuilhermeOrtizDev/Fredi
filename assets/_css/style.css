@@ -1,0 +1,413 @@
+/* General Style */
+
+main, section{
+    margin-top: 3rem!important;
+    margin-bottom: 3rem!important;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+/* ---------------------------------- */
+
+/* header */
+
+.header_menu{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.whatsapp{
+    color: #25D366;
+}
+
+.filter_immovable input{
+    border-color: #B26114;
+    border-radius: 0;
+    background-clip: initial;
+    font-weight: bold;
+}
+
+.filter_immovable select{
+    border-color: #B26114;
+    border-radius: 0;
+    background-clip: initial;
+    font-weight: bold;
+}
+
+.filter_immovable ::-webkit-input-placeholder { 
+    color: black;
+}
+  
+.filter_immovable :-ms-input-placeholder { 
+    color: black;
+}
+  
+.filter_immovable ::placeholder {
+    color: black;
+}
+
+@media (min-width: 576px) { 
+    .filter_immovable{
+        width: 376px;
+    }
+}
+
+@media (min-width: 768px) { 
+    .filter_immovable{
+        width: 578px;
+    }
+}
+
+@media (min-width: 992px) { 
+    .filter_immovable{
+        width: 792px;
+    }
+}
+
+@media (min-width: 1200px) { 
+    .filter_immovable{
+        width: 1000px;
+    }
+}
+
+@media (min-width: 1400px) { 
+    .filter_immovable{
+        width: 1200px;
+    }
+}
+
+/* header front page*/
+
+.header_front_page  .filter_immovable input{
+    border-color: black;
+}
+
+.header_front_page .filter_immovable select{
+    border-color: black;
+}
+
+.header_front_page .filter_immovable ::-webkit-input-placeholder { 
+    color: #DB9D27;
+}
+  
+.header_front_page .filter_immovable :-ms-input-placeholder { 
+    color: #DB9D27;
+}
+  
+.header_front_page .filter_immovable ::placeholder {
+    color: #DB9D27;
+}
+
+.header_front_page .header_content{
+    background-image: url(../_images/banner.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.header_front_page .filter_immovable{
+    position: absolute;
+    bottom: 100px;
+    transform: translateX(-50%);
+    left: 50%;
+    background: linear-gradient(180deg, rgba(142, 89, 39, 0) 0%, #8E5927 100%);
+    padding: 20px;
+}
+
+/* header pages*/
+
+.header_page{
+    height: 170px;
+}
+
+.header_page .header_menu{
+    background-color: #000000;
+    border-bottom: solid;
+    border-bottom-width: .2rem;
+    border-bottom-color: #DB9D27;
+    height: 75px;
+}
+
+.header_page img{
+    position: absolute;
+}
+
+/* ---------------------------------- */
+
+/* Social Networks */
+
+.social_networks>a>div{
+    position: fixed;
+    right: 0;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+}
+
+.link_social{
+    border-radius: 10px 0 0 10px;
+    padding: .5rem;
+}
+
+.link_social_network{
+    background-color: #DB9D27;
+    color: black;
+}
+
+.link_whatsapp{
+    background-color: #25D366;
+    color: white;
+    top: calc(50% - 60px);
+}
+
+.link_whatsapp:hover{
+    width: 160px;
+}
+
+.link_facebook{
+    top: 50%;
+}
+
+.link_facebook:hover{
+    width: 160px;
+}
+
+.link_phone{
+    top: calc(50% + 60px);
+}
+
+.link_phone:hover{
+    width: 160px;
+}
+
+/* ---------------------------------- */
+
+/* main */
+
+.card_immovable{
+    height: 420px;
+    box-shadow: 5px 5px 5px gray   ;
+}
+
+.card_immovable img{
+    object-fit: cover;
+    object-position: top;
+}
+
+.card_immovable img:hover{
+    object-position: bottom;
+}
+
+.card_immovable_content{
+    height: 120px;
+}
+
+.card_immovable_reference{
+    padding: 5px 20px;
+    transform: translateX(15px);
+    border-radius: 8px 0 0 8px;
+}
+
+/* ---------------------------------- */
+
+/*  */
+
+/* ---------------------------------- */
+
+/*  */
+
+/* ---------------------------------- */
+
+/* Bootstrap Custom */
+
+.bg-primary{
+    background-color: #DB9D27!important;
+}
+
+.bg-secondary{   
+    background-color: #000000 !important;
+}
+
+.bg-ternary{
+    background-color: #B26114!important;
+}
+
+.text-primary{
+    color: #DB9D27 !important;
+}
+
+.text-secondary{   
+    color: #000000 !important;
+}
+
+.text-ternary{
+    color: #B26114!important;
+}
+
+.btn-primary{
+    background-color: #DB9D27!important;
+    color: black !important;
+    border-color: #DB9D27!important;
+}
+
+.btn-primary:hover{
+    background-color: #B26114!important;
+    color: white !important;
+    border-color: #B26114!important;
+}
+
+.btn-secondary{   
+    background-color: #000000 !important;
+    color: #DB9D27 !important;
+    border-color: #000000 !important;
+}
+
+.btn-secondary:hover{   
+    background-color: #000000 !important;
+    color: white !important;
+    border-color: #000000 !important;
+}
+
+.btn-ternary{
+    background-color: #B26114!important;
+    color: black !important;
+    border-color: #B26114!important;
+}
+
+.btn-ternary:hover{
+    background-color: #DB9D27!important;
+    color: white !important;
+    border-color: #DB9D27!important;
+}
+
+.box-primary{
+    background-color: black;
+    border-color: #DB9D27;
+    border-width: .2rem;
+    border-style: solid;
+    padding: 1.5rem;
+}
+
+.border-primary{
+    border-color: #DB9D27 !important;
+}
+
+.border-secondary{
+    border-color: #000000 !important;
+}
+
+.border-ternary{
+    border-color: #B26114 !important;
+}
+
+.h-300px{
+    height: 300px;
+}
+
+.h-80{
+    height: 80%;
+}
+
+.h-20{
+    height: 20%;
+}
+
+.top{
+    top: 10px;
+}
+
+.right{
+    right: 10px;
+}
+
+.bottom{
+    bottom: 10px;
+}
+
+.left{
+    left: 10px;
+}
+
+.top-0{
+    top: 0;
+}
+
+.right-0{
+    right: 0;
+}
+
+.bottom-0{
+    bottom: 0;
+}
+
+.left-0{
+    left: 0;
+}
+
+.top-50{
+    top: 50%;
+}
+
+.right-50{
+    right: 50%;
+}
+
+
+.bottom-50{
+    bottom: 50%;
+}
+
+.left-50{
+    left: 50%;
+}
+
+.top-50, .bottom-50{
+    transform: translateY(-50%);
+}
+
+.right-50, .left-50{
+    transform: translateX(-50%);
+}  
+
+.img-cover{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.img-cover-top{
+    object-position: top;
+}
+
+.img-cover-bottom{
+    object-position: bottom;
+}
+
+.img-cover-center{
+    object-position: center;
+}
+
+.img-cover-bottom{
+    object-position: right;
+}
+
+.img-cover-bottom{
+    object-position: left;
+}
+
+.shadow-primary{
+    box-shadow: 5px .5rem 1rem #DB9D27;
+}
+
+.shadow-secondary{
+    box-shadow: 5px .5rem 1rem #000000;
+}
+
+.shadow-ternary{
+    box-shadow: 5px .5rem 1rem #8E5927;
+}
