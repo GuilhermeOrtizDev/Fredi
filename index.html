@@ -12,18 +12,35 @@
 <body>
     <header class="header_front_page">
        <div class="header_menu">
-           <div class="d-flex justify-content-between">
+        <input class="d-none" type="checkbox" id="checkbox_menu">
+           <div>
                <div>
-                   <button class="btn">
+                   <label id="bar_menu" class="btn bar_menu_absolute top" for="checkbox_menu">
                        <i class="fas fa-bars fa-2x text-primary"></i>
                        <br>
-                       <span class="text-white font-weight-bold">MENU</span>
-                   </button>
+                       <span id="span_menu" class="text-white font-weight-bold">MENU</span>
+                   </label>
+                   <nav id="nav_menu" class="nav_menu navbar bg-secondary">
+                        <ul class="navbar-nav align-items-center justify-content-center w-100">
+                            <li class="nav-item active">
+                                <a class="nav-link disabled" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="imoveis.html">Imoveis</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contato.html">Contato</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="quem_somos.html">Quem Somos</a>
+                            </li>
+                        </ul>
+                  </nav>
                </div>
-               <div>
+               <div class="position-absolute top left-50">
                    <img src="assets/_images/logo.png" alt="Fredi">
                </div>
-               <div class="m-3">
+               <div class="m-3 position-absolute top right d-md-block d-none">
                    <a href="">
                        <div class="d-flex align-items-center"> 
                            <i class="fab fa-whatsapp fa-2x whatsapp"></i>
@@ -36,22 +53,22 @@
        <div class="header_content">
            <div class="filter_immovable">
                 <form class="form row">
-                    <div class="col">
+                    <div class="col-12 col-sm-6 col-lg-3 mb-2 mb-lg-0">
                         <select class="form-control bg-secondary text-primary w-100">
                             <option value="all" disabled selected>Tipo Imovel</option>
                             <option value="all">Todos</option>
                         </select>
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-sm-6 col-lg-3 mb-2 mb-lg-0">
                         <select class="form-control bg-secondary text-primary w-100">
                             <option value="all" disabled selected>Cidade</option>
                             <option value="all">Todos</option>
                         </select>
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-sm-6 col-lg-3 mb-2 mb-lg-0">
                         <input type="number" class="form-control bg-secondary text-primary w-100" id="" placeholder="Dormitorios">
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-sm-6 col-lg-3 mb-2 mb-lg-0">
                         <button type="submit" class="btn btn-primary font-weight-bold w-100">Buscar</button>
                     </div>
                 </form>
@@ -64,10 +81,10 @@
                 <div class="position-relative w-100 text-center mb-4">
                     <h3 class="h6 mb-0">Destaques</h3>
                     <h4 class="h3">Lançamentos</h4>
-                    <button class="btn btn-secondary position-absolute top right-0">VER TODOS</button>
+                    <button class="immovable_viewMore btn btn-secondary top right-0">VER TODOS</button>
                 </div>
                 <div class="row">
-                    <div class="col">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="card_immovable bg-secondary rounded">
                             <div class="h-300px position-relative">
                                 <img src="assets/_images/predio_temp.png" alt="ref" class="img-fluid h-300px">
@@ -98,7 +115,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="card_immovable bg-secondary rounded">
                             <div class="h-300px position-relative">
                                 <img src="assets/_images/predio_temp.png" alt="ref" class="img-fluid h-300px">
@@ -129,7 +146,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="card_immovable bg-secondary rounded">
                             <div class="h-300px position-relative">
                                 <img src="assets/_images/predio_temp.png" alt="ref" class="img-fluid h-300px">
@@ -160,7 +177,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="card_immovable bg-secondary rounded">
                             <div class="h-300px position-relative">
                                 <img src="assets/_images/predio_temp.png" alt="ref" class="img-fluid h-300px">
@@ -197,10 +214,10 @@
                 <div class="position-relative w-100 text-center mb-4">
                     <h3 class="h6 mb-0">Destaques</h3>
                     <h4 class="h3">Vendas</h4>
-                    <button class="btn btn-secondary position-absolute top right-0">VER TODOS</button>
+                    <button class="immovable_viewMore btn btn-secondary top right-0">VER TODOS</button>
                 </div>
                 <div class="row">
-                    <div class="col">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="card_immovable bg-secondary rounded">
                             <div class="h-300px position-relative">
                                 <img src="assets/_images/predio_temp.png" alt="ref" class="img-fluid h-300px">
@@ -231,7 +248,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="card_immovable bg-secondary rounded">
                             <div class="h-300px position-relative">
                                 <img src="assets/_images/predio_temp.png" alt="ref" class="img-fluid h-300px">
@@ -262,7 +279,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="card_immovable bg-secondary rounded">
                             <div class="h-300px position-relative">
                                 <img src="assets/_images/predio_temp.png" alt="ref" class="img-fluid h-300px">
@@ -293,7 +310,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="card_immovable bg-secondary rounded">
                             <div class="h-300px position-relative">
                                 <img src="assets/_images/predio_temp.png" alt="ref" class="img-fluid h-300px">
@@ -329,7 +346,45 @@
         </section>
 
         <section class="mb-0">
-
+            <div class="bg-primary shadow">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="bg-secondary p-5">
+                                <form action="">
+                                    <h3 class="text-primary font-weight-bold font-baloo text-center mb-4">Anuncie seu Imóvel</h3>
+                                    <div class="form-group"> 
+                                        <input type="text" class="form-control" placeholder="Nome">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="E-mail">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" class="form-control" placeholder="Telefone">
+                                    </div>
+                                    <div class="text-small text-primary">
+                                        <span>
+                                            Ao prencheer e enviar seus dados voce 
+                                            esta confirmando que podemos entrar 
+                                            em contato.
+                                        </span>
+                                    </div>
+                                    <div class="form-group mt-4">
+                                        <button class="btn btn-primary font-weight-bold w-100">Enviar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="d-flex align-items-center h-100 p-4">
+                                <p class="h2 font-weight-bold font-baloo">
+                                    Rápido e fácil.<br>Anunciar imóvel em uma imobiliária como a Fredi significa evitar dores de cabeça.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="mb-0 mt-0">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.0190234435095!2d-50.009490485509446!3d-24.794802114176406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c29d4fc712dfdb%3A0x296d02314f46a2a7!2sR.%20Cel.%20Oleg%C3%A1rio%20de%20Macedo%2C%20836%20-%20%C3%81gua%20Suja%2C%20Castro%20-%20PR%2C%2084165-690!5e0!3m2!1spt-BR!2sbr!4v1624738558533!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -337,10 +392,10 @@
         <section class="mb-0 mt-0">
             <div class="container-fluid bg-secondary p-5">
                 <div class="row p-5">
-                    <div class="col-8 d-flex align-items-center">
-                        <p class="text-primary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially </p>
+                    <div class="col-12 col-md-8 d-flex align-items-center">
+                        <p class="text-primary text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially </p>
                     </div>
-                    <div class="col-4 text-center">
+                    <div class="col-12 col-md-4 mt-4 mt-md-0 text-center">
                         <img src="assets/_images/logo.png" alt="">
                     </div>
                 </div>
@@ -367,9 +422,19 @@
             </a>
         </div>
     </main>
-    <footer>
-
+    <footer class="bg-primary">
+        <div class="d-flex align-items-center p-3">
+          <div class="row w-100 m-0">
+            <div class="col-12 col-lg-8">
+              <p class="h6 text-white text-center text-lg-left m-0">Copyright ©️ 2020 Fredi, todos os direitos reservados. CRECI nº J-0573</p>
+            </div>
+            <div class="col-12 col-lg-4">  
+              <p class="h6 text-white text-center text-lg-right m-0">Desenvolvido por <a href="https://api.whatsapp.com/send?phone=554288860522">Guilherme Ortiz</a></p>
+            </div>
+          </div>
+        </div>
     </footer>
+    <script src="assets/_script/script.js"></script>
     <script src="assets/jquery/dist/jquery.min.js"></script>
     <script src="assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>

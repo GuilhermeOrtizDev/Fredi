@@ -1,6 +1,6 @@
 /* General Style */
 
-main, section{
+section{
     margin-top: 3rem!important;
     margin-bottom: 3rem!important;
 }
@@ -17,6 +17,68 @@ a:hover{
     position: absolute;
     top: 0;
     width: 100%;
+}
+
+.nav_menu{
+    height: 100vh;
+    z-index: 1;
+    top: 0;
+    transition: all .2s linear;
+    position: fixed;
+    width: 100%;
+    left: -100%;
+}
+
+.nav_menu a{
+    color: #DB9D27;
+}
+
+.nav_menu a:hover{
+    color: #B26114;
+}
+
+#checkbox_menu:checked ~* nav#nav_menu{
+    transform: translateX(100%);
+}
+
+label[for="checkbox_menu"]{
+    z-index: 2;
+}
+
+.bar_menu_absolute{
+    position: absolute;
+    left: 10px;
+    transition: all .7s ease;
+}
+
+.bar_menu_fixed{
+    border-radius: 0 20px 20px 0;
+    position: fixed;
+    left: 0;
+    padding: 1rem;
+    background-color: #000000;
+    border-color: #DB9D27;
+    transition: all .7s ease;
+}
+
+.bar_menu_fixed span{
+    display: none;
+    transition: all .7s ease;
+}
+
+.soon{
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.soon:hover{
+    transform: translateY(15px);
+}
+
+.soon_tape{
+    top: -15px;
+    height: 215px;
+    width: 200px;
 }
 
 .whatsapp{
@@ -56,6 +118,11 @@ a:hover{
 }
 
 @media (min-width: 768px) { 
+    .nav_menu{
+        width: 300px !important;
+        left: -300px !important;
+    }
+    
     .filter_immovable{
         width: 578px;
     }
@@ -152,6 +219,7 @@ a:hover{
 .link_social{
     border-radius: 10px 0 0 10px;
     padding: .5rem;
+    transition: all .3s ease;
 }
 
 .link_social_network{
@@ -197,9 +265,11 @@ a:hover{
 .card_immovable img{
     object-fit: cover;
     object-position: top;
+    width: 100%;
 }
 
 .card_immovable img:hover{
+    transition: all .5s linear;
     object-position: bottom;
 }
 
@@ -213,9 +283,53 @@ a:hover{
     border-radius: 8px 0 0 8px;
 }
 
+.range_price {
+    transform: translateX(-3.56rem);
+    width: calc(100% + 3.5rem);
+    border-radius: 0 10px 0 0;
+}
+
+.whatsapp_immovable_single{
+    background-color: #25D366;
+    line-height: 1.5rem;
+}
+
+.form_immovable_single{
+    height: calc(100% - 3rem);
+    border-radius: 0 0 10px 10px;
+}
+
+@media (min-width: 576px) { 
+    .immovable_viewMore{
+        position: absolute;
+    }
+}
+
+@media (min-width: 768px) { 
+}
+
+@media (min-width: 992px) { 
+    
+}
+
+@media (min-width: 1200px) { 
+    
+}
+
+@media (min-width: 1400px) { 
+}
+
 /* ---------------------------------- */
 
-/*  */
+/* Footer */
+
+footer a{
+    color: aqua;
+}
+
+footer a:hover{
+    color: aquamarine;
+}
 
 /* ---------------------------------- */
 
@@ -247,6 +361,10 @@ a:hover{
 
 .text-ternary{
     color: #B26114!important;
+}
+
+.text-small{
+    font-size: .7rem;
 }
 
 .btn-primary{
