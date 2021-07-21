@@ -4,59 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fredi</title>
-    <link rel="stylesheet" href="assets/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <title>Fredi - Quem Somos</title>
+    <link rel="icon" href="assets/_images/logo.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <link rel="stylesheet" href="assets/_css/style.css">
+    <!-- <link rel="stylesheet" href="assets/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css"> -->
 </head>
 <body>
     <header class="header_page">
-       <div class="header_menu">
-           <div class="w-100">
-                <img src="assets/_images/background_logo.png" class="position-absolute top-0 left-50">
-                <img src="assets/_images/logo.png" alt="Fredi" class="position-absolute top left-50">
-           </div>
-           <div class="d-flex justify-content-between">
-               <div>
-                   <button class="btn">
-                       <i class="fas fa-bars fa-2x text-primary"></i>
-                       <br>
-                       <span class="text-white font-weight-bold">MENU</span>
-                   </button>
-               </div>
-               <div class="m-3">
-                   <a href="">
-                       <div class="d-flex align-items-center"> 
-                           <i class="fab fa-whatsapp fa-2x whatsapp"></i>
-                           <span class="text-white font-weight-bold ml-2">(42)9.9955-5533</span>
-                       </div>
-                   </a>
-               </div>
-           </div>
-       </div> 
-    </header>
+        <div class="header_menu">
+         <input class="d-none" type="checkbox" id="checkbox_menu">
+            <div class="w-100">
+                <div>
+                     <label id="bar_menu" class="btn bar_menu_absolute" for="checkbox_menu">
+                         <i class="fas fa-bars fa-2x text-primary"></i>
+                         <br>
+                         <span id="span_menu" class="text-white font-weight-bold">MENU</span>
+                     </label>
+                     <nav id="nav_menu" class="nav_menu navbar bg-secondary">
+                         <ul class="navbar-nav align-items-center justify-content-center w-100">
+                             <li class="nav-item active">
+                                 <a class="nav-link" href="index.html">Inicio</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link" href="imoveis.html">Imoveis</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link" href="contato.html">Contato</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link disabled" href="quem_somos.html">Quem Somos</a>
+                             </li>
+                         </ul>
+                   </nav>
+                </div>
+                <a href="index.html">
+                    <div class="soon soon_all">
+                        <img src="assets/_images/background_logo.png" class="soon_tape position-absolute">
+                        <img src="assets/_images/logo.png" alt="Fredi" class="position-absolute top">
+                    </div>
+                </a>
+                 <div class="m-3 position-absolute top-0 right d-md-block d-none">
+                     <a href="">
+                         <div class="d-flex align-items-center"> 
+                             <i class="fab fa-whatsapp fa-2x whatsapp"></i>
+                             <span class="text-white font-weight-bold ml-2">(42)9.9955-5533</span>
+                         </div>
+                     </a>
+                 </div>
+            </div>
+        </div> 
+     </header>
 
     <main>
         
         <section class="container">
             <div class="col bg-secondary p-5 shadow-primary rounded mr-2">
                 <p class="text-primary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially Lorem Ipsum is simply dummy text of the printing and </p>
-            </div>
-        </section>
-
-        <section class="mb-0 mt-0">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.0190234435095!2d-50.009490485509446!3d-24.794802114176406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c29d4fc712dfdb%3A0x296d02314f46a2a7!2sR.%20Cel.%20Oleg%C3%A1rio%20de%20Macedo%2C%20836%20-%20%C3%81gua%20Suja%2C%20Castro%20-%20PR%2C%2084165-690!5e0!3m2!1spt-BR!2sbr!4v1624738558533!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </section>
-        <section class="mb-0 mt-0">
-            <div class="container-fluid bg-secondary p-5">
-                <div class="row p-5">
-                    <div class="col-8 d-flex align-items-center">
-                        <p class="text-primary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially </p>
-                    </div>
-                    <div class="col-4 text-center">
-                        <img src="assets/_images/logo.png" alt="">
-                    </div>
-                </div>
             </div>
         </section>
         <div class="social_networks">
@@ -81,9 +87,39 @@
         </div>
     </main>
     <footer>
-
+        <section class="m-0">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.0190234435095!2d-50.009490485509446!3d-24.794802114176406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c29d4fc712dfdb%3A0x296d02314f46a2a7!2sR.%20Cel.%20Oleg%C3%A1rio%20de%20Macedo%2C%20836%20-%20%C3%81gua%20Suja%2C%20Castro%20-%20PR%2C%2084165-690!5e0!3m2!1spt-BR!2sbr!4v1624738558533!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+        <section class="m-0">
+            <div class="container-fluid bg-secondary p-5">
+                <div class="row p-5">
+                    <div class="col-8 d-flex align-items-center">
+                        <p class="text-primary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially </p>
+                    </div>
+                    <div class="col-4 text-center">
+                        <img src="assets/_images/logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-primary m-0">
+            <div class="d-flex align-items-center p-3">
+            <div class="row w-100 m-0">
+                <div class="col-12 col-lg-8">
+                <p class="h6 text-white text-center text-lg-left m-0">Copyright ©️ 2020 Fredi, todos os direitos reservados. CRECI nº J-0573</p>
+                </div>
+                <div class="col-12 col-lg-4">  
+                <p class="h6 text-white text-center text-lg-right m-0">Desenvolvido por <a href="https://api.whatsapp.com/send?phone=554288860522">Guilherme Ortiz</a></p>
+                </div>
+            </div>
+            </div>
+        </section>
     </footer>
-    <script src="assets/jquery/dist/jquery.min.js"></script>
-    <script src="assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="assets/_script/script.js"></script>
+    <!-- <script src="assets/jquery/dist/jquery.min.js"></script>
+    <script src="assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
 </body>
 </html>
