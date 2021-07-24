@@ -5,6 +5,10 @@ section{
     margin-bottom: 3rem!important;
 }
 
+hr {
+    border-top: 3px solid #DB9D27;
+}
+
 a:hover{
     text-decoration: none;
 }
@@ -41,26 +45,36 @@ a:hover{
     transform: translateX(100%);
 }
 
+#checkbox_menu:checked ~* label.bar_menu_fixed{
+    right: 0;
+    left: auto;
+    border-radius: 20px 0 0 20px;
+    border-left: #DB9D27 solid ;
+    border-right: 0;
+}
+
 label[for="checkbox_menu"]{
     z-index: 101;
     cursor: pointer;
+    transition: all .7s ease;
 }
 
 .bar_menu_absolute{
     position: absolute;
     left: 10px;
     top: 0;
-    transition: all .7s ease;
 }
 
 .bar_menu_fixed{
     border-radius: 0 20px 20px 0;
     position: fixed;
-    left: -1px;
+    left: 0;
     padding: 1rem;
     background-color: #000000;
+    border-style: solid;
+    border-width: 2px;
+    border-left: 0;
     border-color: #DB9D27;
-    transition: all .7s ease;
     top: 10px;
 }
 
@@ -131,6 +145,11 @@ label[for="checkbox_menu"]{
     .nav_menu{
         width: 300px !important;
         left: -300px !important;
+    }
+
+    #checkbox_menu:checked ~* label.bar_menu_fixed{
+        left: 237px;
+        right: auto;
     }
     
     .filter_immovable{
@@ -298,20 +317,60 @@ label[for="checkbox_menu"]{
     border-radius: 8px 0 0 8px;
 }
 
-.range_price {
-    transform: translateX(-3.56rem);
-    width: calc(100% + 3.5rem);
-    border-radius: 0 10px 0 0;
+.card_form_img_title {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
 }
 
 .whatsapp_immovable_single{
     background-color: #25D366;
-    line-height: 1.5rem;
 }
 
-.form_immovable_single{
-    height: calc(100% - 3rem);
+.card_form_img_form{
     border-radius: 0 0 10px 10px;
+}
+
+.card_form_img{
+    min-height: 400px;
+}
+
+.card_form_img > .spotlight_img{
+    height: calc(100vh - 220px);
+}
+
+@media (min-width: 576px) { 
+}
+
+@media (min-width: 768px) { 
+    .card_form_img_info{
+        height: 100%;
+    }
+    .card_form_img_title {
+        transform: translateX(-3.56rem);
+        width: calc(100% + 3.5rem);
+        border-radius: 0 10px 0 0;
+    }
+    .card_form_img_form{
+        height: calc(100% - 3rem);
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+@media (min-width: 992px) { 
+    .card_form_img{
+        height: calc(100vh - 220px);
+    }
+    .card_form_img > .spotlight_img{
+        height: 100%;
+    }
+}
+
+@media (min-width: 1200px) { 
+
+}
+
+@media (min-width: 1400px) { 
+
 }
 
 /* ---------------------------------- */
